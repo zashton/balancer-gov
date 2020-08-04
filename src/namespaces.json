@@ -11,7 +11,7 @@
       "0x107174D70b33523E83711EA4C3F4229cdB8A7Cb1",
       "0x0b21Dbc34A953a35dFA629ad31e1cEE3dE0433Fb"
     ],
-    "visible": true
+    "visible": false
   },
   "dai": {
     "key": "dai",
@@ -24,5 +24,15 @@
       "0x0b21Dbc34A953a35dFA629ad31e1cEE3dE0433Fb"
     ],
     "visible": false
+  },
+  "yearn": {
+    "key": "yearn",
+    "symbol": "YFI",
+    "name": "yearn.finance",
+    "token": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
+    "verified": [
+      "0xb258aD4125e84068F3A47fbBC4F6aCeD2bC148EC"
+    ],
+    "visible": true
   }
 }

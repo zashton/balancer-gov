@@ -1,7 +1,7 @@
 <template>
   <img
     :src="
-      `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+      `https://assets.coingecko.com/coins/images/11849/large/yearn-finance.png`
     "
     class="d-inline-block bg-gray-9 v-align-middle line-height-0 circle"
     :style="{
