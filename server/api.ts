@@ -4,6 +4,7 @@ import pinata from './pinata';
 import relayer from './relayer';
 import { verify, jsonParse, sendError } from './utils';
 import pkg from '../package.json';
+import 'core-js';
 
 const router = express.Router();
 

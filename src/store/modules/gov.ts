@@ -12,11 +12,11 @@ import { version } from '@/../package.json';
 import namespaces from '@/namespaces.json';
 
 const state = {
-  namespace: namespaces['balancer'],
+  namespace: namespaces['yearn'],
   votingPower: 0,
   votingPowerByPools: {},
   walletBalance: 0,
-  snapshot: 10574500
+  snapshot: 10593378
 };
 
 const mutations = {
@@ -221,10 +221,12 @@ const actions = {
           token: state.namespace.token,
           addresses: [address]
         })) || {};
+
       const walletBalance = await dispatch('getBalance', {
         blockTag,
         token: state.namespace.token
       });
+
       commit('GET_MY_VOTING_POWER_SUCCESS', {
         walletBalance,
         votingPower: Object.values(myVotingPower[address]).reduce(
