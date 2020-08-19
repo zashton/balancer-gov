@@ -14,7 +14,7 @@
       <User :address="address" :verified="namespace.verified" class="column" />
       <div
         v-text="proposal.msg.payload.choices[vote.msg.payload.choice - 1]"
-        class="flex-auto text-center text-white"
+        class="flex-auto text-center text-black"
       />
       <div class="column text-right">
         <span
@@ -22,7 +22,7 @@
             `${_numeral(vote.balance)} ${namespace.symbol ||
               _shorten(namespace.token)}`
           "
-          class="text-white"
+          class="text-black"
         />
         <a
           @click="openReceiptModal(vote)"
