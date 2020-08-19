@@ -10,7 +10,7 @@
 .label,
 .Label {
   border-radius: 2em;
-  color: $white;
+  color: $text;
   padding: 0 7px;
   line-height: 18px;
 }

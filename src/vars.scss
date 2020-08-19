@@ -1,9 +1,11 @@
 @import '~primer-support';
 
-$border-radius: 4px;
+$border-radius: 24px;
 $black: #0f1011;
+$grey-background: #f9fafb;
+$text: #212529;
 
-$border-color: #353d45;
+$border-color: rgba(25, 101, 233, 0.5);
 $border: 1px solid $border-color;
 
 $blue: #384AFF;
@@ -15,7 +17,9 @@ $bg-red: $red;
 $text-blue: $blue;
 $text-green: $green;
 $text-red: $red;
-$bg-gray-dark: lighten($black, 2);
+$text-black: #212529;
+$bg-gray-dark: $white;
+$yfi-blue: #2F80ED;
 
 $body-font-size: 18px;
 $body-line-height: 1.4;

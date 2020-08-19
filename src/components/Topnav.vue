@@ -1,6 +1,6 @@
 <template>
   <Sticky class="mb-4">
-    <nav id="topnav" class="border-bottom width-full bg-black">
+    <nav id="topnav" class="width-full bg-black">
       <Container>
         <div class="d-flex flex-items-center" style="height: 78px;">
           <div class="flex-auto d-flex flex-items-center">
@@ -10,7 +10,7 @@
               style="padding-top: 2px;"
             >
               <img
-                src="~/@/assets/logo.svg"
+                src="~/@/assets/YFI-logo.png"
                 class="mr-2 v-align-middle"
                 width="32"
                 height="32"

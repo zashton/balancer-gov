@@ -25,7 +25,7 @@ export default {
 .button {
   border: 1px solid $border-color;
   background-color: transparent;
-  color: $white;
+  color: $text;
   border-radius: 23px;
   padding: 0 24px;
   outline: none;
@@ -38,21 +38,21 @@ export default {
     border: 1px solid $bg-blue;
 
     &:hover {
-      color: $white;
+      color: $text;
       background-color: $bg-blue;
       border: 1px solid $bg-blue;
     }
 
     &:disabled {
-      color: $white !important;
+      color: $text !important;
       border: 1px solid $text-gray;
       background-color: $text-gray;
     }
   }
 
   &:hover {
-    color: $white;
-    border-color: $white;
+    color: $text;
+    border-color: $text;
   }
 
   &:disabled {
