@@ -13,7 +13,7 @@
     </div>
     <div class="border-left border-top overflow-hidden">
       <div
-        class="day border-bottom border-right text-white"
+        class="day border-bottom border-right"
         v-for="dayOfWeek in daysOfWeek"
         v-text="dayOfWeek"
         :key="dayOfWeek"
@@ -125,18 +125,18 @@ export default {
     height: 44px;
 
     &.selectable {
-      color: white;
+      color: $text;
       background-color: transparent;
 
       &:hover {
-        background-color: $white !important;
-        color: $black !important;
+        background-color: $yfi-blue !important;
+        color: $white !important;
       }
     }
 
     &.selected {
-      background-color: $white !important;
-      color: $black !important;
+      background-color: $yfi-blue !important;
+      color: $white !important;
     }
   }
 }

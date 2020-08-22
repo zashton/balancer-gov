@@ -3,8 +3,7 @@
 @import "~@primer/css/index.scss";
 
 html, body, #app {
-  background-color: $black;
-  color: $gray;
+  background-color: $grey-background;
   font-family: $font-weight-normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +14,7 @@ html, body, #app {
 }
 
 h1, h2, h3, h4 {
-  color: $white;
+  color: $text;
   font-family: $font-weight-bold;
 }
 
@@ -32,22 +31,22 @@ p {
 }
 
 a {
-  color: $white;
+  color: $text;
 
   &:hover {
-    color: $white !important;
+    color: $text !important;
     cursor: pointer;
     text-decoration: none !important;
   }
 }
 
 ::placeholder {
-  color: $gray;
+  color: $yfi-blue;
 }
 
 .input {
   outline: none;
-  color: $white;
+  color: $text;
   background-color: transparent;
   border: none;
 }
@@ -86,7 +85,7 @@ textarea {
 }
 
 .bg-black {
-  background-color: $black;
+  background-color: $grey-background;
 }
 
 .State {

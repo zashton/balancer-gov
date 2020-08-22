@@ -25,7 +25,7 @@ export default {
 .button {
   border: 1px solid $border-color;
   background-color: transparent;
-  color: $white;
+  color: $text;
   border-radius: 23px;
   padding: 0 24px;
   outline: none;
@@ -34,13 +34,13 @@ export default {
   font-size: 18px;
 
   &.button--submit {
-    background-color: $bg-blue;
-    border: 1px solid $bg-blue;
+    background-color: $yfi-blue;
+    border: 1px solid $yfi-blue;
 
     &:hover {
       color: $white;
-      background-color: $bg-blue;
-      border: 1px solid $bg-blue;
+      background-color: $yfi-blue;
+      border: 1px solid $yfi-blue;
     }
 
     &:disabled {
@@ -51,8 +51,8 @@ export default {
   }
 
   &:hover {
-    color: $white;
-    border-color: $white;
+    color: $text;
+    border-color: $text;
   }
 
   &:disabled {

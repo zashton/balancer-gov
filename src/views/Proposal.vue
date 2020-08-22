@@ -51,7 +51,7 @@
           <Block title="Informations">
             <div class="mb-1">
               <b>Token</b>
-              <span class="float-right text-white">
+              <span class="float-right text-black">
                 <Token :address="proposal.msg.token" class="mr-1" />
                 {{ namespace.symbol }}
               </span>
@@ -80,14 +80,14 @@
                 <b>Start date</b>
                 <span
                   v-text="$d(payload.start * 1e3, 'long')"
-                  class="float-right text-white"
+                  class="float-right text-black"
                 />
               </div>
               <div class="mb-1">
                 <b>End date</b>
                 <span
                   v-text="$d(payload.end * 1e3, 'long')"
-                  class="float-right text-white"
+                  class="float-right text-black"
                 />
               </div>
               <div class="mb-1">

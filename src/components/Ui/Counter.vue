@@ -19,9 +19,9 @@ export default {
   line-height: 18px;
   height: 20px;
   width: 20px;
-  color: $white;
+  color: $text;
   text-align: center;
-  background-color: $gray;
+  background-color: $yfi-blue;
   border-radius: 10px;
   vertical-align: middle;
 }
