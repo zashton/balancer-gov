@@ -325,7 +325,7 @@ const actions = {
     commit('GET_BALANCE_REQUEST');
     const address = state.account;
     const multi = new Contract(config.multicall, abi['Multicall'], web3);
-    const testToken = new Interface(abi.YfiToken);
+    const testToken = new Interface(abi.TestToken);
 
     const calls = [
       [token, testToken.encodeFunctionData('balanceOf', [address])]

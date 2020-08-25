@@ -10,7 +10,7 @@
               style="padding-top: 2px;"
             >
               <img
-                src="~/@/assets/YFI-logo.png"
+                src="~/@/assets/curve-logo.png"
                 class="mr-2 v-align-middle"
                 width="32"
                 height="32"

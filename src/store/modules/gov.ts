@@ -12,7 +12,7 @@ import { version } from '@/../package.json';
 import namespaces from '@/namespaces.json';
 
 const state = {
-  namespace: namespaces['yearn'],
+  namespace: namespaces['curve'],
   votingPower: 0,
   votingPowerByPools: {},
   walletBalance: 0,
