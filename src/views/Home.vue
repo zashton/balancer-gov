@@ -9,10 +9,10 @@
         :key="namespace.token"
         :to="{ name: 'proposals', params: { key: namespace.key } }"
       >
-        <Block class="text-center">
+        <Block class="text-center curve-header">
           <Token :address="namespace.token" size="128" class="mb-4" />
           <div>
-            <h2>{{ namespace.name }} {{ namespace.symbol }}</h2>
+            <h2 class='white-text'>{{ namespace.name }} {{ namespace.symbol }}</h2>
             <div v-if="namespace.verified.length > 0">
               <Avatar
                 v-for="verified in namespace.verified.slice(0, 5)"

@@ -4,6 +4,7 @@
     title="Votes"
     :counter="Object.keys(votes).length"
     :slim="true"
+    class="proposals"
   >
     <div
       v-for="(vote, address, i) in visibleVotes"

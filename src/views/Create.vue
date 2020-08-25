@@ -32,7 +32,7 @@
               :key="i"
               class="d-flex mb-2"
             >
-              <UiButton class="d-flex width-full">
+              <UiButton class="d-flex width-full button-no-hover">
                 <span class="mr-4">{{ i + 1 }}</span>
                 <input
                   v-model="form.choices[i]"
@@ -54,19 +54,19 @@
           <div class="mb-2">
             <UiButton
               @click="[(modalOpen = true), (selectedDate = 'start')]"
-              class="width-full mb-2"
+              class="width-full mb-2 green-button"
             >
               <span v-if="!form.start">Select start date</span>
               <span v-else v-text="$d(form.start * 1e3, 'long')" />
             </UiButton>
             <UiButton
               @click="[(modalOpen = true), (selectedDate = 'end')]"
-              class="width-full mb-2"
+              class="width-full mb-2 green-button"
             >
               <span v-if="!form.end">Select end date</span>
               <span v-else v-text="$d(form.end * 1e3, 'long')" />
             </UiButton>
-            <UiButton class="width-full mb-2">
+            <UiButton class="width-full mb-2 button-no-hover">
               <input
                 v-model="form.snapshot"
                 type="number"
@@ -79,7 +79,7 @@
             @click="handleSubmit"
             :disabled="!isValid"
             :loading="loading"
-            class="d-block width-full button--submit"
+            class="d-block width-full button--submit green-button"
           >
             Publish
           </UiButton>

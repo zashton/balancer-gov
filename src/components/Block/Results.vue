@@ -1,5 +1,5 @@
 <template>
-  <Block :title="ts >= payload.end ? 'Results' : 'Current results'">
+  <Block :title="ts >= payload.end ? 'Results' : 'Current results'" class="proposals">
     <div v-for="(choice, i) in payload.choices" :key="i">
       <div class="text-black mb-1">
         <span v-text="choice" class="mr-1" />

@@ -117,7 +117,7 @@ export default {
   .day {
     color: $text-gray;
     text-decoration: none;
-    font-size: 17px !important;
+    font-size: 14px !important;
     float: left;
     text-align: center;
     line-height: 44px;
@@ -129,13 +129,13 @@ export default {
       background-color: transparent;
 
       &:hover {
-        background-color: $yfi-blue !important;
+        background-color: $curve-blue !important;
         color: $white !important;
       }
     }
 
     &.selected {
-      background-color: $yfi-blue !important;
+      background-color: $curve-blue !important;
       color: $white !important;
     }
   }

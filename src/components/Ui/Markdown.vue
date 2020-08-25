@@ -33,10 +33,12 @@ export default {
   h2 {
     font-size: $h2-size;
     border-bottom: 0;
+    color: $white;
+    font-weight: normal;
   }
 
   img {
-    border-radius: 8px;
+    border-radius: 0px;
   }
 }
 </style>

@@ -23,24 +23,24 @@ export default {
 @import '../../vars';
 
 .button {
-  border: 1px solid $border-color;
+  border: none;
   background-color: transparent;
   color: $text;
-  border-radius: 23px;
-  padding: 0 24px;
+  border-radius: 0px;
+  padding: 4px 12px;
   outline: none;
-  line-height: 46px;
-  height: 46px;
-  font-size: 18px;
+  height: 26px;
+  font-size: 13px;
+  font-weight: 600;
 
   &.button--submit {
-    background-color: $yfi-blue;
-    border: 1px solid $yfi-blue;
+    background-color: $curve-blue;
+    border: 1px solid $curve-blue;
 
     &:hover {
       color: $white;
-      background-color: $yfi-blue;
-      border: 1px solid $yfi-blue;
+      background-color: $curve-blue;
+      border: 1px solid $curve-blue;
     }
 
     &:disabled {
@@ -51,8 +51,8 @@ export default {
   }
 
   &:hover {
-    color: $text;
-    border-color: $text;
+    color: $silver-background;
+    background: $text-gray;
   }
 
   &:disabled {

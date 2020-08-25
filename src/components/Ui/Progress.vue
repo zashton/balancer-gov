@@ -29,7 +29,7 @@ export default {
 .Progress {
   background-color: $bg-gray-dark;
   height: 8px;
-  border-radius: 4px;
+  border-radius: 0px;
 
   span:last-child {
     background-color: transparentize($blue, 0.4) !important;

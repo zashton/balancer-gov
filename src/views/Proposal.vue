@@ -19,7 +19,7 @@
           </div>
           <Block
             v-if="ts >= payload.start && ts < payload.end"
-            class="mb-4"
+            class="mb-4 proposals"
             title="Cast your vote"
           >
             <div class="mb-3">
@@ -48,7 +48,7 @@
           />
         </div>
         <div class="col-12 col-lg-4 float-left">
-          <Block title="Informations">
+          <Block title="Informations" class="proposals">
             <div class="mb-1">
               <b>Token</b>
               <span class="float-right text-black">

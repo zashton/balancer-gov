@@ -16,6 +16,7 @@ html, body, #app {
 h1, h2, h3, h4 {
   color: $text;
   font-family: $font-weight-bold;
+  font-weight: normal;
 }
 
 b {
@@ -23,7 +24,7 @@ b {
 }
 
 p {
-  font-size: 22px;
+  font-size: 16px;
 }
 
 #app {
@@ -41,18 +42,21 @@ a {
 }
 
 ::placeholder {
-  color: $yfi-blue;
+  color: $silver-background;
 }
 
 .input {
   outline: none;
-  color: $text;
-  background-color: transparent;
-  border: none;
+  color: #0ff;
+  background-color: #00f;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+  border-image: initial;
 }
 
 textarea {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,7 +73,7 @@ textarea {
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .column {
@@ -85,14 +89,76 @@ textarea {
 }
 
 .bg-black {
-  background-color: $grey-background;
+  background-color: $silver-background;
 }
 
 .State {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 30px;
   height: 28px;
   vertical-align: middle;
   padding: 0 12px;
-  border-radius: 14px;
+  border-radius: 0px;
+}
+
+.curve-header {
+  background: $curve-blue;
+  border: 6px double $white;
+  color: $white;
+  box-shadow: 0 0 0 3px $curve-blue, 1em 1em 3px 0 rgba(0,0,0,.5);
+}
+
+.border-md {
+  border: 6px double $white !important;
+}
+
+.border-bottom {
+  border-bottom: 6px double $white;
+}
+
+.border-top {
+  border-top: 6px double $white;
+}
+
+.border-left {
+  border-left: 6px double $white;
+}
+
+.border-right {
+  border-right: 6px double $white;
+}
+
+.white-text {
+  color: $white;
+}
+
+.proposals {
+  background: silver;
+  box-shadow: 0 0 0 3px silver, 1em 1em 3px 0 rgba(0,0,0,.5);
+}
+
+.green-button {
+  background: green !important;
+  box-shadow: 0.5em 0.5em 3px rgba(0,0,0,.5);
+  transform: translate3d(.25em,.25em,10em);
+  border: 1px outset green !important;
+  color: $white !important;
+
+  &:hover {
+    background: #32cd32 !important;
+    box-shadow: 0 0 0 rgba(0,0,0,.5);
+  }
+
+  &:disabled {
+    background: $text-gray !important;
+    border: 1px outset $text-gray !important;
+    cursor: not-allowed;
+  }
+}
+
+.button-no-hover {
+  &:hover {
+    background: transparent !important;
+    color: #212529 !important;
+  }
 }

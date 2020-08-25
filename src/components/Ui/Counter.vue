@@ -21,8 +21,8 @@ export default {
   width: 20px;
   color: $text;
   text-align: center;
-  background-color: $yfi-blue;
-  border-radius: 10px;
+  background-color: $curve-blue;
+  border-radius: 0px;
   vertical-align: middle;
 }
 </style>

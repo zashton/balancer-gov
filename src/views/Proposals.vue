@@ -26,14 +26,14 @@
       </div>
     </Container>
     <Container :slim="true">
-      <Block :slim="true">
+      <Block :slim="true" class="proposals">
         <div class="px-4 py-3 bg-gray-dark">
           <a
             v-for="state in ['All', 'Active', 'Pending', 'Closed']"
             :key="state"
             v-text="state"
             @click="selectedState = state"
-            :class="selectedState !== state && 'text-gray'"
+            :class="selectedState !== state && 'text-white'"
             class="mr-3"
           />
         </div>
