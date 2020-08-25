@@ -47,7 +47,8 @@ export default {
 
   .shell {
     border: $border;
-    background-color: $grey-background;
+    box-shadow: 0 0 0 3px silver, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
+    background-color: $silver-background;
     padding-left: 0 !important;
     padding-right: 0 !important;
     max-width: 440px;
