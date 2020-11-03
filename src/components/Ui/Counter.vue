@@ -22,7 +22,7 @@ export default {
   color: $text;
   text-align: center;
   background-color: $yfi-blue;
-  border-radius: 10px;
+  border-radius: 4px;
   vertical-align: middle;
 }
 </style>

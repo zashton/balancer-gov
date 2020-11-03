@@ -36,7 +36,7 @@ export default {
   }
 
   img {
-    border-radius: 8px;
+    border-radius: 4px;
   }
 }
 </style>

@@ -12,7 +12,7 @@ import { version } from '@/../package.json';
 import namespaces from '@/namespaces.json';
 
 const state = {
-  namespace: namespaces['yearn'],
+  namespace: namespaces['keep3r'],
   votingPower: 0,
   votingPowerByPools: {},
   walletBalance: 0,
@@ -194,7 +194,7 @@ const actions = {
     const testToken = new Interface(abi.TestToken);
     addresses.forEach(address => {
       // @ts-ignore
-      calls.push([token, testToken.encodeFunctionData('balanceOf', [address])]);
+      calls.push([token, testToken.encodeFunctionData('getCurrentVotes', [address])]);
     });
     const balances: any = {};
     try {
