@@ -1,9 +1,7 @@
 <template>
   <img
-    :src="
-      `https://assets.coingecko.com/coins/images/11849/large/yearn-finance.png`
-    "
-    class="d-inline-block bg-gray-9 v-align-middle line-height-0 circle"
+    src="~/@/assets/Keep3r-logo.svg"
+    class="d-inline-block v-align-middle line-height-0"
     :style="{
       width: `${size || 22}px`,
       height: `${size || 22}px`

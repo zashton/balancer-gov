@@ -1,7 +1,7 @@
 {
   "name": "balancer-gov",
   "version": "0.1.1",
-  "repository": "iearn-finance/balancer-gov",
+  "repository": "keep3r-network/balancer-gov",
   "license": "GPL-3.0",
   "scripts": {
     "serve": "vue-cli-service serve",

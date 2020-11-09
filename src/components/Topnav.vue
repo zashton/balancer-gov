@@ -10,7 +10,7 @@
               style="padding-top: 2px;"
             >
               <img
-                src="~/@/assets/YFI-logo.png"
+                src="~/@/assets/Keep3r-logo.svg"
                 class="mr-2 v-align-middle"
                 width="32"
                 height="32"

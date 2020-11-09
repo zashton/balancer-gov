@@ -29,7 +29,7 @@
                 v-text="choice"
                 @click="selectedChoice = i + 1"
                 class="d-block width-full mb-2"
-                :style="selectedChoice === i + 1 && 'border-color: white;'"
+                :style="selectedChoice === i + 1 && 'background: #21b66f; border-color: #21b66f;'"
               />
             </div>
             <UiButton
@@ -48,7 +48,7 @@
           />
         </div>
         <div class="col-12 col-lg-4 float-left">
-          <Block title="Informations">
+          <Block title="Information">
             <div class="mb-1">
               <b>Token</b>
               <span class="float-right text-black">
@@ -165,13 +165,21 @@ export default {
   methods: {
     ...mapActions(['getProposal']),
     async loadProposal() {
+
+      console.log(this.id)
+      console.log(this.namespace.token)
       const proposalObj = await this.getProposal({
         token: this.namespace.token,
         id: this.id
       });
-      this.proposal = proposalObj.proposal;
-      this.votes = proposalObj.votes;
-      this.results = proposalObj.results;
+      console.log(proposalObj)
+
+      if(proposalObj) {
+        this.proposal = proposalObj.proposal;
+        this.votes = proposalObj.votes;
+        this.results = proposalObj.results;
+      }
+
     }
   },
   async created() {
