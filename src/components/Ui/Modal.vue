@@ -50,7 +50,7 @@ export default {
     background-color: $grey-background;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    max-width: 440px;
+    max-width: 450px;
 
     max-height: calc(100vh - 80px);
     display: flex;

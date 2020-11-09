@@ -7,10 +7,12 @@
           proposal.msg.payload.choices[selectedChoice - 1]
         }}"? <br />This action <b>cannot</b> be undone.
       </h4>
-      <div class="m-4 p-4 border rounded-2 text-white">
+      <div class="m-4 p-4 border rounded-2">
         <div class="d-flex">
           <span v-text="'Option'" class="flex-auto text-gray mr-1" />
-          {{ proposal.msg.payload.choices[selectedChoice - 1] }}
+          <span class="mr-1 text-black">
+            {{ proposal.msg.payload.choices[selectedChoice - 1] }}
+          </span>
         </div>
         <div class="d-flex">
           <span v-text="'Snapshot'" class="flex-auto text-gray mr-1" />

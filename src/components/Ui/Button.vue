@@ -24,7 +24,7 @@ export default {
 
 .button {
   border: 1px solid $border-color;
-  background-color: transparent;
+  background-color: $white;
   color: $text;
   border-radius: 4px;
   padding: 0 24px;

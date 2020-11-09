@@ -117,10 +117,11 @@ const actions = {
         ipfs.get(payload.id),
         client.request(`${payload.token}/proposal/${payload.id}`)
       ]);
+
       result.proposal = formatProposal(proposal);
       result.proposal.ipfsHash = payload.id;
       result.votes = votes;
-      const bptDisabled = !!result.proposal.bpt_voting_disabled;
+      const bptDisabled = true;
       const { snapshot } = result.proposal.msg.payload;
       const blockTag =
         snapshot > rootState.web3.blockNumber ? 'latest' : parseInt(snapshot);
@@ -191,7 +192,7 @@ const actions = {
     commit('GET_VOTERS_BALANCES_REQUEST');
     const multi = new Contract(config.multicall, abi['Multicall'], wsProvider);
     const calls = [];
-    const testToken = new Interface(abi.TestToken);
+    const testToken = new Interface(abi.Keep3rToken);
     addresses.forEach(address => {
       // @ts-ignore
       calls.push([token, testToken.encodeFunctionData('getCurrentVotes', [address])]);
